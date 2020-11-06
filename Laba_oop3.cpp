@@ -86,8 +86,6 @@ public:
     {
         this->size = size;
         objects = new Form * [size];
-        for (int i; i < size; ++i)
-            objects[i] = NULL;
     }
 
     void add(int index, Form* object) {
@@ -133,14 +131,8 @@ public:
     }
 };
 
-void create(Storage x) {
-    for (int i = 0; i < x.length(); ++i)
-        //x.add(i, new Point());
-        x.add(i, NULL);
-};
-
-Form* rand_obj(int variant) {
-    switch (variant) {
+Form* rand_obj(int var) {
+    switch (var) {
     case 1:
         return new Point;
     case 2:
@@ -148,6 +140,15 @@ Form* rand_obj(int variant) {
 
     }
 }
+
+void create(Storage x) {
+    for (int i = 0; i < x.length(); ++i)
+        //x.add(i, new Point());
+        //x.add(i, NULL);
+        x.add(i, rand_obj(1 + rand() % 2));
+};
+
+
 
 int main()
 {
@@ -166,7 +167,7 @@ int main()
             printf("%i)", i);
             switch (variant) {
             case 1:
-                printf("Создание и вставка\n");
+                printf("Создание и Вставка\n");
                 if (storage.Empty(num))
                     storage.add(rand() % n, rand_obj(1 + rand() % 2));
                 else
@@ -182,7 +183,7 @@ int main()
                 break;
             case 3:
                 num = rand() % n;
-                printf("Метод\n");
+                printf("Вызов Метода\n");
                 if (!storage.Empty(num))
                     storage.met(num);
                 else
