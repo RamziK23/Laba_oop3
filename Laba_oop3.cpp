@@ -135,9 +135,10 @@ Form* rand_obj(int var) {
     switch (var) {
     case 1:
         return new Point;
+        break;
     case 2:
         return new Circle;
-
+        break;
     }
 }
 
