@@ -1,4 +1,4 @@
 ﻿  Laba_oop3.cpp
-C:\Users\ramze\source\repos\Laba_oop3\Laba_oop3\Laba_oop3.cpp(137,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\ramze\source\repos\Laba_oop3\Laba_oop3\Laba_oop3.cpp(132): warning C4715: rand_obj: значение возвращается не при всех путях выполнения
-  Laba_oop3.vcxproj -> C:\Users\ramze\source\repos\Laba_oop3\Debug\Laba_oop3.exe
+C:\Users\ramze\source\repos\Laba_oop3\Laba_oop3\Laba_oop3.cpp(155,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\ramze\source\repos\Laba_oop3\Laba_oop3\Laba_oop3.cpp(150): warning C4715: rand_obj: значение возвращается не при всех путях выполнения
+C:\Users\ramze\source\repos\Laba_oop3\Laba_oop3\Laba_oop3.cpp(89): error C4700: использована неинициализированная локальная переменная "i"
